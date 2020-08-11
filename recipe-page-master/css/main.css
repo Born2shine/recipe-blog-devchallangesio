@@ -40,7 +40,7 @@ body {
 }
 .hero-info {
   display: grid;
-  grid-template-columns: 0.4fr 5fr;
+  grid-template-columns: 0.4fr 7fr;
   align-items: baseline;
 }
 .hero-text {
