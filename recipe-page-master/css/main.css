@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-primary: #f2994a;
+  --clr-secondary: ;
+  --ff-primary: Playfair Display;
+  --ff-secondary: "Montserrat";
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-black-2: #333333;
+  --clr-black-3: #4f4f4f;
+  --clr-black-5: #a9a9a9;
+  --clr-black-10: #bdbdbd;
+}
+/* 
+=============
+Global CSS
+=============
+*/
+img {
+}
+.section-center {
+  width: 95%;
+  margin: 0 auto;
+}
+body {
+  background: var(--clr-white);
+  font-size: 1.3rem;
+}
+.hero h3 {
+  font-family: "Playfair Display";
+  font-size: 1.6rem;
+  line-height: 1.9;
+  margin-top: 0.5rem;
+}
+.hero-info {
+  display: grid;
+  grid-template-columns: 0.4fr 5fr;
+  align-items: baseline;
+}
+.hero-text {
+  font-size: 0.8rem;
+  font-family: Montserrat;
+  font-style: italic;
+  color: var(--clr-black-3);
+  font-weight: 500;
+}
+.main-img {
+  margin: 1.4rem 0;
+}
+.main-img img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+.recipe-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem 0;
+  grid-template-areas:
+    "a a a"
+    "b c d";
+}
+.recipe {
+  display: grid;
+  grid-template-columns: 0.2fr 5fr;
+  gap: 0 0.2rem;
+  font-family: Montserrat;
+}
+.recipe-title {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--clr-black-5);
+  line-height: 1.6;
+}
+.recipe-icon .material-icons {
+  font-size: 1.2rem;
+}
+.recipe-text {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.recipe-1 .recipe-icon,
+.recipe-1 .recipe-text {
+  color: var(--clr-primary);
+}
+.recipe-1 {
+  grid-area: a;
+}
+.article h3,
+h5 {
+  font-family: "Playfair Display";
+}
+.article-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: var(--clr-black-2);
+}
+.article-sub-title {
+  font-size: 1rem;
+  color: var(--clr-black-5);
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.article-info {
+  display: grid;
+  grid-template-columns: 0.5fr 7fr;
+  gap: 0 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.article-checkbox input {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.article-text {
+  font-weight: normal;
+  font-size: 0.89rem;
+  line-height: 1.9;
+  font-family: "Montserrat";
+}
+.article-text span {
+  font-weight: bold;
+}
+.article-details {
+  display: grid;
+}
+.aside-1 {
+  order: 1;
+}
+.instructions {
+  font-size: 1.8rem;
+}
+.instruction-info {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 0.3fr 2fr;
+  gap: 0 0.8rem;
+  margin-bottom: 1rem;
+}
+.instruction-number {
+  margin-top: 0.8rem;
+}
+.instruction-number span {
+  padding: 0.5rem 1rem;
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  font-family: "Playfair Display";
+  font-weight: bold;
+  border-radius: 0.4rem;
+}
+.instruction-text {
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.instruction-text span {
+  font-weight: bold;
+}
+.source {
+  /* width: 95%; */
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  color: var(--clr-black-10);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+.source a {
+  text-decoration: none;
+  color: var(--clr-black-10);
+}
+.footer {
+  text-align: center;
+  color: var(--clr-black-5);
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  margin: 4rem 0;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 420px) {
+  .hero-info {
+    grid-template-columns: 0.4fr 8fr;
+  }
+}
+@media screen and (min-width: 520px) {
+  .hero-info {
+    grid-template-columns: 0.4fr 8fr;
+  }
+}
+@media screen and (min-width: 990px) {
+  .hero-info {
+    grid-template-columns: 0.2fr 8fr;
+  }
+  .hero-text {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .article-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0 3rem;
+  }
+  .article-info {
+    grid-template-columns: 0.4fr 8fr;
+  }
+  .article-title {
+    font-size: 1.5rem;
+  }
+  .article-sub-title {
+    font-size: 1.3rem;
+  }
+  .article-text {
+    font-size: 1.1rem;
+  }
+  .aside-1 {
+  }
+  .aside-2 {
+    order: 1;
+  }
+  .recipe {
+    /* display: block; */
+    gap: 0 1rem;
+    padding: 1.2rem;
+  }
+  .recipe-list {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 0.9rem;
+    padding: 1.8rem 0;
+  }
+  .recipe-icon .material-icons {
+    font-size: 2rem;
+  }
+  .recipe-title {
+    font-size: 0.7rem;
+  }
+  .recipe-text {
+    font-size: 0.9rem;
+  }
+  .instruction-text {
+    font-size: 1.1rem;
+  }
+  .source {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 75%;
+  }
+  .hero-info {
+    grid-template-columns: 0.2fr 8fr;
+  }
+  .hero-text {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
