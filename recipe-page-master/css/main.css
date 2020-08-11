@@ -25,7 +25,7 @@ Global CSS
 img {
 }
 .section-center {
-  width: 95%;
+  width: 93%;
   margin: 0 auto;
 }
 body {
@@ -114,6 +114,9 @@ h5 {
   grid-template-columns: 0.5fr 7fr;
   gap: 0 0.3rem;
   margin-bottom: 0.5rem;
+}
+.article-checkbox {
+  margin-top: 0.3rem;
 }
 .article-checkbox input {
   width: 1.3rem;
